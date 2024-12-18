@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <header>
-        <div class="container">
-            <div class="logo">Travel</div>
+        <div class="container header-layout">
+            <div class="logo">TRAVEL LINDU</div>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -20,33 +21,49 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-text">
-                <h1>Your Trusted Travel Agent's</h1>
-                <p>Your happiness is our happiness</p>
+
+    <div class="hero-text">
+        <h1>WELCOME IN TRAVEL LINDU</h1>
+        <p>There is travel to various cities around the world</p>
+    </div>
+
+    
+        <div class="container hero-layout">
+            <div class="hero-image">
+                <img src="gambar2.jpg" alt="Travel Illustration">
+                <p class="image-caption">
+                    "Holidays in the city of Bali are very enjoyable and provide very beautiful views."
+                </p>
+                <p class="caption-author">
+                    <strong>Luis Romano</strong> <br>
+                    Jurnalis International
+                </p>
             </div>
-            <div class="hero-content">
-                <div class="hero-form">
-                    <h2>Contact Us</h2>
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email Address" required>
-                        <select>
-                            <option>Select Package</option>
-                            <option>Bali</option>
-                            <option>Japan</option>
-                            <option>Singapore</option>
-                        </select>
-                        <button type="submit">Send</button>
-                    </form>
-                </div>
-                <div class="hero-image">
-                    <img src="gambar1.jpeg" alt="Travel Illustration">
-                </div>
+            <div class="hero-form">
+                <h2>Contact Us</h2>
+                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+                <form>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" placeholder="First and last name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="example@email.com" required>
+
+                    <label for="package">What are you interested in?</label>
+                    <select id="package" required>
+                        <option value="">Select option</option>
+                        <option value="bali">Bali</option>
+                        <option value="japan">Japan</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="singapore">Bandung</option>
+                        <option value="singapore">Surabaya</option>
+                    </select>
+                    <button type="submit">SEND</button>
+                </form>
             </div>
         </div>
     </section>
+
 
     <section class="packages" id="packages">
         <div class="container">
@@ -54,43 +71,45 @@
             <div class="package-list">
                 <div class="package">
                     <h3>Bali</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Enjoy traveling to the city of Bali which has a very strong cultural beauty, you can also visit the tourist attractions in Bali.</p>
                 </div>
                 <div class="package">
                     <h3>Japan</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Enjoy traveling to the city of Japan which has a very strong cultural beauty, you can also visit the tourist attractions in Japan.</p>
                 </div>
                 <div class="package">
                     <h3>Singapore</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Enjoy traveling to the city of Singapore which has a very strong cultural beauty, you can also visit the tourist attractions in Singapore.</p>
                 </div>
                 <div class="package">
-                    <h3>Bandung</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Bangkok</h3>
+                    <p>Enjoy traveling to the city of Bangkok which has a very strong cultural beauty, you can also visit the tourist attractions in Bangkok.</p>
                 </div>
                 <div class="package">
-                    <h3>Surabaya</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Manchester</h3>
+                    <p>Enjoy traveling to the city of Manchester which has a very strong cultural beauty, you can also visit the tourist attractions in Manchester.</p>
                 </div>
                 <div class="package">
-                    <h3>Third Feature</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>London</h3>
+                    <p>Enjoy traveling to the city of London which has a very strong cultural beauty, you can also visit the tourist attractions in London.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="closing">
+
+    <section class="closing" id="contact">
         <div class="container">
-            <h2>Your Closing Argument Headline</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button>Call to Action</button>
+            <h2>COMMENTS FOR THIS TRAVEL</h2>
+            <p>If you have suggestions to convey to the travel agency, please contact us, and if you have criticism about travel, please contact us too.<p>
+            <button>CALL TO ACTION</button>
         </div>
     </section>
 
+
     <footer>
         <div class="container">
-            <p>Travel | Terms of Service | Privacy Policy</p>
+            <p>Travel Lindu | Terms of Service | Privacy Policy</p>
             <p>&copy; 2024 Travel</p>
         </div>
     </footer>
