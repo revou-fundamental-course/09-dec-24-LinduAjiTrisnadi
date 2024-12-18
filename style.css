@@ -17,51 +17,94 @@ body {
     margin: 0 auto;
 }
 
+
+
 /* Header */
 header {
     background: #004080;
     color: white;
     padding: 1rem 0;
+    gap: 1.5rem;
 }
-header .logo {
+
+.header-layout {
+    display: flex; /* Membagi area kiri dan kanan */
+    justify-content: space-between; /* Menempatkan kiri dan kanan */
+    align-items: center; /* Vertikal sejajar */
+}
+
+.logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
-header nav ul {
+
+nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
-}
-header nav ul li a {
-    color: white;
-    text-decoration: none;
+    gap: 1.5rem; /* Jarak antar item menu */
 }
 
-/* Hero Section */
-.hero {
-    background: #f4f4f4;
-    padding: 2rem 0;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero-text{
+    text-align: center;
+    gap: 1.5rem;
+    padding: 3rem 0;
+}
+
+/* Hero Section Layout */
+.hero-layout {
     display: flex;
-    justify-content: space-between;
+    gap: 4rem;
     align-items: center;
+    padding: 2rem 0;
 }
-.hero-text h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+
+/* Hero Image */
+.hero-image {
+    flex: 1;
     text-align: center;
 }
-.hero-text p {
-    margin-bottom: 1rem;
-    text-align: center;
+.hero-image img {
+    max-width: 100%;
+    border-radius: 5px;
 }
+.hero-image .image-caption {
+    font-style: italic;
+    margin-top: 1rem;
+    color: #555;
+}
+.hero-image .caption-author {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Hero Form */
 .hero-form {
+    flex: 1;
     background: white;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .hero-form h2 {
     margin-bottom: 1rem;
+}
+.hero-form p {
+    margin-bottom: 1.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+.hero-form form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #444;
 }
 .hero-form input, .hero-form select, .hero-form button {
     width: 100%;
@@ -73,7 +116,23 @@ header nav ul li a {
 .hero-form button {
     background: #004080;
     color: white;
+    border: none;
     cursor: pointer;
+    font-size: 1rem;
+}
+.hero-form button:hover {
+    background: #003366;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-form {
+        width: 90%;
+    }
 }
 
 /* Packages Section */
